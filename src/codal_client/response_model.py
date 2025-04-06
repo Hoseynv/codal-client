@@ -6,4 +6,10 @@ class ResponseModel:
         self.error_message = error_message
 
     def __repr__(self):
-        return f"<ResponseModel success={self.success} status={self.status_code}>"
+        return (
+            f"<ResponseModel "
+            f"success={self.success}, "
+            f"status_code={self.status_code}, "
+            f"data_preview={str(self.data)[:100]!r}, "
+            f"error_message={self.error_message!r}>"
+        )

@@ -10,6 +10,6 @@ class ResponseModel:
             f"<ResponseModel "
             f"success={self.success}, "
             f"status_code={self.status_code}, "
-            f"data_preview={str(self.data)[:100]!r}, "
+            f"data_preview={str(self.data)}, "
             f"error_message={self.error_message!r}>"
         )
